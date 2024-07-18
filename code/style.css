@@ -52,10 +52,11 @@ p{
     color: var(--text-color);
     
 }
-ul li{
+ul li, ol li{
     font-size: 23px;
     color: var(--text-color);
 }
+
 .flex{
     display:flex;
 }
@@ -105,7 +106,7 @@ ul li{
 
 /* Header Css Starts Here // HTML CODE LINE 10-25 */
 
-.logo>h4{
+h4{
     color: var(--primary-color);
     font-size: 3rem;
     cursor: pointer;
@@ -229,10 +230,85 @@ ul>li:hover{
 } 
 /* Your-Habits-Section Starts here // HTML CODE LINES 59 to 93 */
 
+/*  Run an Extra  Mile Easily  Section Starts Here  // HTML CODE 95 TO 107*/
+.right-image-side{
+    width:fit-content;
+    margin-right: 60px;
+}
+.running-man{
+    width: 400px;
+    border-radius: 20px;
+}
+.RUN{
+    width: 70%;
+    border: 1px solid #ffffff21;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+}
+.run-left-content {
+    width: 30%;
+    margin-left: 60px;
+}
+.run-left-content>p{
+    margin: 20px 0;
+    line-height: 1.8rem;
+}
+.running-btn {
+    /*  */
+    margin-left: 0px;
+    padding: 10px 30px;
+}
+/* Run an Extra  Mile Easily  Section ENDS Here // HTML CODE 95 TO 107*/
 
 
+/* Footer Starts here */
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin: 2px solid red;
+    padding-top: 30px;
+}
+.footer-content{
+    width: 75%;
+    margin:0 auto;
+    justify-content: space-around;
+    grid-template-columns: 40% 30% auto;
+    padding-bottom: 50px;
+    
+}
+.footer-left>p{
+    margin: 15px 0;
+    line-height: 1.5rem;
 
+}
 
+.footer-middle {
+    width: auto;
+    margin-left: 70px;
+}
+footer ol li{
+    line-height: 2.4rem;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+ol li:hover{
+    color: var(--primary-color);
+}
+footer .copyright{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+hr{
+   opacity: 0.3;
+}
+.copyright>p{
+    margin: 20px 0;
+    font-size: 18px;
+}
 
 
 
@@ -304,3 +380,47 @@ ul>li:hover{
     }
     
 }
+/* running Section  */
+@media screen and (max-width:576px){
+    .RUN{
+        flex-direction: column;
+    }
+
+    .run-left-content {
+        width: 100%;
+        margin: 0;
+    }
+    .run-left-content h1{
+        font-size: 2rem;
+    }
+    .right-image-side {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .running-man{
+        width: 200px;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+    .running-btn{
+        padding: 12px 63px;
+        font-size: 20px;
+        margin-left: 18px;
+    }
+}
+
+
+
+
+/* Footer  */
+@media screen and (max-width:576px) {
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+    .footer-middle{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+}
+/* Close */

@@ -262,6 +262,51 @@ ul>li:hover{
 }
 /* Run an Extra  Mile Easily  Section ENDS Here // HTML CODE 95 TO 107*/
 
+/* Our Team Section Starts from Here */
+
+.our-team-section {
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 60px;
+}
+.title-description{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+.team-member {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+    background-color: #5e5e5e78;
+    border-radius: 15px;
+    padding: 20px 0;
+}
+
+.trainer-image {
+    width: 300px;
+    border-radius: 15px;
+    aspect-ratio: 3/2;
+}
+
+.name {
+    position: absolute;
+    left: 20%;
+    top: 65%;
+}
+/* Our Team Section ENds from Here */
+
 
 /* Footer Starts here */
 footer{
@@ -408,8 +453,28 @@ hr{
         margin-left: 18px;
     }
 }
-
-
+/* Meet Our team */
+@media screen and (max-width:576px){
+    .team-member {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .trainer-image {
+        width: 250px;
+    }
+    .name {
+        position: absolute;
+        top: 60%;
+    }
+    .title-description {
+        width: auto;
+    }
+    .title-description>h1{
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+        
+}
 
 
 /* Footer  */

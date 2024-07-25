@@ -83,8 +83,12 @@ ul li, ol li{
     cursor: pointer;
     transition: all 0.8s;
 }
+.global-btn-apps:hover{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
 .global-btn{
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 18px;
     margin: 0 15px;
     border: none;
@@ -132,6 +136,13 @@ ul>li:hover{
     border-radius: 50px;
     color: white;
 }
+
+/* ul li:nth-child(1){
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: white;
+
+} */
 /* Header Css Ends Here // HTML CODE LINE 10-25 */
 
 /* Hero Section Starts Here */
@@ -262,7 +273,80 @@ ul>li:hover{
 }
 /* Run an Extra  Mile Easily  Section ENDS Here // HTML CODE 95 TO 107*/
 
-/* Our Team Section Starts from Here */
+
+/* BMI section Starts Here   // Html code line number 111 to 174 */
+.bmi-section{
+    width: 100%;
+    margin: 80px 0;
+}
+.section-title{
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+}
+.section-title>p{
+    margin: 20px 0;
+}
+.table-form-section{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #292929b8;
+    margin-top: 50px;
+}
+.main-content{
+
+    width: 75%;
+    margin: 0 auto;
+}
+table{
+    color: var(--title-color);
+    border-collapse: collapse;
+    margin-top: 30px;
+    
+}
+table td{
+    border: 1px solid rgb(240, 242, 240);
+    width: 200px;
+    padding: 20px;
+
+}
+table tr{
+    padding:10px 20px;
+}
+/* Right side Form // html code 148 number*/
+.right-input{
+    flex-direction: column;
+    width: 50%;
+}
+.right-input>p{
+    margin: 10px 0;
+}
+form{
+    width: 60%;
+}
+input, select#sex{
+    background-color: #4a4949;
+    outline: none;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 10px;
+}
+input:nth-child(5){
+    width: 93%;
+    margin-bottom: 5px;
+}
+select#sex {
+    padding: 10px 50px;
+    color: var(--text-color);
+}
+.calculate{
+    margin-left: -12px;
+    margin-top: 10px;
+}
+/* BMI section Ends Here  */
+
+/* Our Team Section Starts from Here // > Html code 180 to 243*/
 
 .our-team-section {
     width: 75%;
@@ -308,12 +392,60 @@ ul>li:hover{
 /* Our Team Section ENds from Here */
 
 
-/* Footer Starts here */
+/* Accordion FAQ Section Starts >>// html code line 247 to 280  */
+.accordion {
+    width: 75%;
+    margin: 100px auto;
+    color: var(--title-color);
+    border: 3px solid #d1d8d126;
+    box-shadow: 3px 5px 20px 5px rgb(93 91 91 / 50%); 
+    padding: 60px 30px;
+    border-radius: 15px;
+}
+
+.accordion>h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.line{
+    width: 700px;
+    height: 5px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+summary{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--title-color);
+    cursor: pointer;
+}
+summary:hover{
+    color: var(--text-color);
+}
+details{
+    margin: 15px 5px;
+}
+details p{
+    padding: 10px;
+    padding-top: 0;
+    color: var(--text-color);
+    margin-left: 30px;
+    line-height: 1.9rem;
+}
+
+
+
+/* Accordion FAQ Section ENDS html code ENDS 280 */
+
+/* Footer Starts here  // html code code lines  282 to 315*/
 footer{
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
-    margin: 2px solid red;
     padding-top: 30px;
+    margin-top: 100px;
 }
 .footer-content{
     width: 75%;
@@ -341,6 +473,7 @@ footer ol li{
 ol li:hover{
     color: var(--primary-color);
 }
+/* Copy-right section, Footer Bottom ..// html code line 310 */
 footer .copyright{
     width: 60%;
     margin: 0 auto;
@@ -354,10 +487,11 @@ hr{
     margin: 20px 0;
     font-size: 18px;
 }
+/* Footer Ends here// html code ends line 315 */
 
 
 
-/* Responsive   Responsive  Responsive  Responsive  Responsive Responsive   Responsive  Responsive */
+/*  Responsive   Responsive  Responsive  Responsive  Responsive Responsive   Responsive  Responsive */
 
 /* Responsive Area Start From Here  */
 
@@ -391,6 +525,7 @@ hr{
     .global-btn-apps , .global-btn{
         font-size: 16px;
         margin: 0;
+        margin-left: 10px;
     }
     .global-btn{
         margin-left: 5px;
@@ -406,6 +541,9 @@ hr{
     .rightbutton-bottom{
         top: 38%;
         left: 0;
+    }
+    .hero-content>p{
+        width: 85%;
     }
 }
 /*  Your Habits Section ENDS here  */
@@ -453,6 +591,48 @@ hr{
         margin-left: 18px;
     }
 }
+
+/* Bmi Section  And Input FORM SEction */
+
+@media screen and (max-width:576px) {
+    .section-title {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .section-title h1{
+        font-size: 2.6rem;
+    }
+
+    .main-content{
+        flex-direction: column;
+    }
+    .right-input {
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 40%;
+    }
+    input:nth-child(5){
+        width: 85%;
+    }
+    select#sex {
+        padding: 10px 32px;
+    }
+    .calculate {
+        margin-left: -2px;
+        margin-top: 10px;
+    }
+    
+}
+
 /* Meet Our team */
 @media screen and (max-width:576px){
     .team-member {
@@ -475,7 +655,25 @@ hr{
     }
         
 }
-
+/* F A Q : Accordion  */
+@media screen and (max-width:576px) {
+    .line{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .accordion>h1 {
+        font-size: 25px;
+    }
+    summary{
+        font-size: 1.16rem;
+    }
+    details p {
+        padding-top: 5px;
+        line-height: 20px;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
 
 /* Footer  */
 @media screen and (max-width:576px) {

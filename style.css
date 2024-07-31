@@ -332,9 +332,14 @@ input, select#sex{
     margin: 5px;
     border-radius: 10px;
 }
-input:nth-child(5){
-    width: 93%;
-    margin-bottom: 5px;
+.activity{
+    background-color: #4a4949;
+    outline: none;
+    border: none;
+    padding: 10px 80px;
+    margin: 5px;
+    border-radius: 10px;
+    color: var(--text-color);
 }
 select#sex {
     padding: 10px 50px;
@@ -400,7 +405,6 @@ select#sex {
     border: 3px solid #d1d8d126;
     box-shadow: 3px 5px 20px 5px rgb(93 91 91 / 50%); 
     padding: 60px 30px;
-    border-radius: 15px;
 }
 
 .accordion>h1{
@@ -435,7 +439,6 @@ details p{
     margin-left: 30px;
     line-height: 1.9rem;
 }
-
 
 
 /* Accordion FAQ Section ENDS html code ENDS 280 */
@@ -620,8 +623,8 @@ hr{
     input{
         width: 40%;
     }
-    input:nth-child(5){
-        width: 85%;
+    .activity{
+        padding: 10px 35px;
     }
     select#sex {
         padding: 10px 32px;
